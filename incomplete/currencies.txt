@@ -1,0 +1,91 @@
+- Issue date of Argentinian Peso, currently only year 1992 known
+- Issue date of Aruban florin, currently only year 1986 known
+- Issue date of Saint Helena pound, currently only year 1976 known
+- Issue date of Bahamian dollar, currently only year 1966 known
+- Issue date of Bahraini dinar, currently only year 1965 known
+- Issue date of Guernsey pound, currently only year 1921 known
+- Issue date of Pound sterling, currently only year ~800 known
+- Issue date of Barbadian dollar, currently only year 1973 known
+- Issue date of Belize dollar, currently only year 1973 known
+- Issue date of West African CFA franc, currently only year 1945 known
+- Issue date of Bhutanese ngultrum, currently only year 1974 known
+- Issue date of Indian rupee, currently only year 1950 known
+- Issue date of Brunei dollar, currently only year 1967 known
+- Issue date of Burundian franc, currently only year 1965 known
+- Issue date of Central African CFA franc, currently only year 1945 known
+- Issue date of Canadian dollar, currently only year 1858 known
+- Issue date of Cape Verdean escudo, currently only year 1914 known
+- Issue date of Cayman Islands dollar, currently only year 1972 known
+- Issue date of Renminbi, currently only year 1948 known
+- Issue date of Colombian peso, currently only year 1837 known
+- Issue date of Comorian franc, currently only year 1886 known
+- Issue date of (Second) Congolese franc, currently only year 1997 known
+- Issue date of Cook Islands dollar, currently only year 1987 known
+- Issue date of Costa Rican colón, currently only year 1896 known
+- Issue date of Czech koruna, currently only year 1993 known
+- Issue date of Djiboutian franc, currently only year 1949 known
+- Issue date of Egyptian pound, currently only year 1834 known
+- Issue date of Eswatini Lilangeni, currently only year 1974 known
+- Issue date of Falkland Islands pound, currently only year 1899 known
+- Issue date of CFP franc, currently only year 12/1945 known
+- Issue date of Gambian dalasi, currently only year 1971 known
+- Issue date of Georgian lari, currently only year 1995 known
+- Issue date of Gibraltar pound, currently only year 1927 known
+- Issue date of Guatemalan quetzal, currently only year 1925 known
+- Issue date of Second Guinean franc, currently only year 1985 known
+- Issue date of Third Haitian gourde, currently only year 1872 known
+- Issue date of Honduran lempira, currently only year 1931 known
+- Issue date of Hong Kong dollar, currently only year 1846 known
+- Issue date of Second Icelandic króna, currently only year 1981 known
+- Issue date of Indonesian rupiah, currently only year 1946 known
+- Issue date of Iranian rial, currently only year 1798 known
+- Issue date of Israeli new shekel, currently only year 1985 known
+- Issue date of Jersey pound, currently only year 1834 known
+- Issue date of Jordanian dinar, currently only year 1949 known
+- Issue date of Kazakhstani tenge, currently only year 1994 known
+- Issue date of Kenyan shilling, currently only year 1966 known
+- Issue date of Kiribati dollar, currently only year 1979 known
+- Issue date of Third North Korean won, currently only year 11/2009 known
+- Issue date of Kuwaiti dinar, currently only year 1961 known
+- Issue date of Lao kip, currently only year 1953 known
+- Issue date of Lebanese pound, currently only year 1924 known
+- Issue date of Lesotho loti, currently only year 1966 known
+- Issue date of Liberian dollar, currently only year 1847 known
+- Issue date of Libyan dinar, currently only year 1971 known
+- Issue date of Macanese pataca, currently only year 1894 known
+- Issue date of Malagasy ariary, currently only year 1961 known
+- Issue date of Malawian kwacha, currently only year 1971 known
+- Issue date of Maldivian rufiyaa, currently only year 1947 known
+- Issue date of Mauritanian ouguiya, currently only year 1973 known
+- Issue date of Mauritian rupee, currently only year 1877 known
+- Issue date of Mexican peso, currently only year 1863 known
+- Issue date of Nicaraguan córdoba, currently only year 1912 known
+- Issue date of Niue dollar, currently only year 2009 known
+- Issue date of Second Macedonian denar, currently only year 05/1993 known
+- Issue date of Norwegian krone, currently only year 1875 known
+- Issue date of Omani rial, currently only year 1940 known
+- Issue date of Panamanian balboa, currently only year 1904 known
+- Issue date of Paraguayan guaraní, currently only year 1944 known
+- Issue date of Philippine peso, currently only year 1851 known
+- Issue date of Pitcairn Islands dollar, currently only year 2009 known
+- Issue date of Polish złoty, currently only year 1924 known
+- Issue date of Rwandan franc, currently only year 1964 known
+- Issue date of Sahrawi peseta, currently only year 1990 known
+- Issue date of São Tomé and Príncipe dobra, currently only year 1977 known
+- Issue date of Saudi riyal, currently only year 1935 known
+- Issue date of Somali shilling, currently only year 1921 known
+- Issue date of Somaliland shilling, currently only year 1921 known
+- Issue date of Sri Lankan rupee, currently only year 1972 known
+- Issue date of Sudanese pound, currently only year 1997 known
+- Issue date of Swedish krona, currently only year 1873 known
+- Issue date of Syrian pound, currently only year 1919 known
+- Issue date of Thai baht, currently only year 1897 known
+- Issue date of Third Transnistrian ruble, currently only year 2000 known
+- Issue date of Trinidad and Tobago dollar, currently only year 1964 known
+- Issue date of Tunisian dinar, currently only year 1960 known
+- Issue date of Tuvaluan dollar, currently only year 1976 known
+- Issue date of Ugandan shilling, currently only year 1966 known
+- Issue date of United Arab Emirates dirham, currently only year 1973 known
+- Issue date of Vanuatu vatu, currently only year 1981 known
+- Issue date of Venezuelan bolívar, currently only year 1879 known
+- Issue date of Yemeni rial, currently only year 1990 known
