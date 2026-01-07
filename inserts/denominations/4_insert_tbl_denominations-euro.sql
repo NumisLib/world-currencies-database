@@ -1,3 +1,6 @@
+-- Euro denominations, DB ID: 4
+-- Last updated: 2026-01-05 by Luca-Pascal Junge
+
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES 
 ('coin', 0.01, 1, 4),

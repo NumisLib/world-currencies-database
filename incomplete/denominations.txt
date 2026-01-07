@@ -1,0 +1,3 @@
+2 - If exists, list of Kopeck <- Russian Ruble
+12 - Australian pound
+15 - Azerbaijani qapik
