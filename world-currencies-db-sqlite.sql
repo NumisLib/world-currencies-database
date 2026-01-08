@@ -1,7 +1,7 @@
 CREATE TABLE `meta` (
   `id` INTEGER PRIMARY KEY CHECK (id = 1),
   `author` varchar(100) NOT NULL,
-  `version` real NOT NULL,
+  `version` string NOT NULL,
   `created_at` date NOT NULL,
   `updated_at` date
 );
