@@ -10,7 +10,7 @@ CREATE TABLE `tbl_countries` (
   `id` INTEGER PRIMARY KEY AUTOINCREMENT,
   `name` varchar(255) NOT NULL,
   `historical` boolean NOT NULL,
-  `iso3166_num` integer NOT NULL,
+  `iso3166_num` integer,
   `iso3166_a2` varchar(2),
   `iso3166_a3` varchar(3),
   `category` TEXT CHECK (category IN ('Sovereign State', 'Dependency', 'Autonomous Region', 'Special Entity')) NOT NULL,
