@@ -1,12 +1,14 @@
--- Omani Rial denominations, DB ID: 121
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Omani Rial denominations, DB ID: 121
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 0.005, 1, 121),
 ('coin', 0.010, 1, 121),
 ('coin', 0.025, 1, 121),
-('coin', 0.050, 1, 121);
+('coin', 0.050, 1, 121)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -16,4 +18,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 5.000, 0, 121),
 ('banknote', 10.000, 0, 121),
 ('banknote', 20.000, 0, 121),
-('banknote', 50.000, 0, 121);
+('banknote', 50.000, 0, 121)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

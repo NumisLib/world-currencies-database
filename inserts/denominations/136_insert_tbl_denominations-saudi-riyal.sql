@@ -1,5 +1,5 @@
--- Saudi Riyal denominations, DB ID: 136
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Saudi Riyal denominations, DB ID: 136
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -9,7 +9,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 0.25, 1, 136),
 ('coin', 0.50, 1, 136),
 ('coin', 1.00, 0, 136),
-('coin', 2.00, 0, 136);
+('coin', 2.00, 0, 136)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -20,4 +22,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 50.00, 0, 136),
 ('banknote', 100.00, 0, 136),
 ('banknote', 200.00, 0, 136),
-('banknote', 500.00, 0, 136);
+('banknote', 500.00, 0, 136)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

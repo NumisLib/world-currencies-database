@@ -1,5 +1,5 @@
--- Comorian Franc denominations, DB ID: 46
--- Last updated: 2026-01-06 by Luca-Pascal Junge
+﻿-- Comorian Franc denominations, DB ID: 46
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -10,7 +10,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 25.00, 0, 46),
 ('coin', 50.00, 0, 46),
 ('coin', 100.00, 0, 46),
-('coin', 250.00, 0, 46);
+('coin', 250.00, 0, 46)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -18,4 +20,7 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 1000.00, 0, 46),
 ('banknote', 2000.00, 0, 46),
 ('banknote', 5000.00, 0, 46),
-('banknote', 10000.00, 0, 46);
+('banknote', 10000.00, 0, 46)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
+

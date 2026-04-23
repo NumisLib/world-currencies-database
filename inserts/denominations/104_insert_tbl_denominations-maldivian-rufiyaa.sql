@@ -1,5 +1,5 @@
--- Maldivian Rufiyaa denominations, DB ID: 104
--- Last updated: 2026-01-06 by Luca-Pascal Junge
+﻿-- Maldivian Rufiyaa denominations, DB ID: 104
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -9,7 +9,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 0.25, 1, 104),
 ('coin', 0.50, 1, 104),
 ('coin', 1.00, 0, 104),
-('coin', 2.00, 0, 104);
+('coin', 2.00, 0, 104)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -20,4 +22,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 100.00, 0, 104),
 ('banknote', 500.00, 0, 104),
 ('banknote', 1000.00, 0, 104),
-('banknote', 5000.00, 0, 104);
+('banknote', 5000.00, 0, 104)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

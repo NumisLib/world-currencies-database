@@ -1,5 +1,5 @@
--- Rwandan Franc denominations, DB ID: 132
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Rwandan Franc denominations, DB ID: 132
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -9,11 +9,15 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 10.00, 0, 132),
 ('coin', 20.00, 0, 132),
 ('coin', 50.00, 0, 132),
-('coin', 100.00, 0, 132);
+('coin', 100.00, 0, 132)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 500.00, 0, 132),
 ('banknote', 1000.00, 0, 132),
 ('banknote', 2000.00, 0, 132),
-('banknote', 5000.00, 0, 132);
+('banknote', 5000.00, 0, 132)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

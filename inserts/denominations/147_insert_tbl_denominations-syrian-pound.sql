@@ -1,5 +1,5 @@
--- Syrian Pound denominations, DB ID: 147
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Syrian Pound denominations, DB ID: 147
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 
@@ -11,4 +11,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 500.00, 0, 147),
 ('banknote', 1000.00, 0, 147),
 ('banknote', 2000.00, 0, 147),
-('banknote', 5000.00, 0, 147);
+('banknote', 5000.00, 0, 147)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

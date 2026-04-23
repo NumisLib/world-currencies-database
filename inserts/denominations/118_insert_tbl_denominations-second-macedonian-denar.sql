@@ -1,5 +1,5 @@
--- Macedonian Denar denominations, DB ID: 118
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Macedonian Denar denominations, DB ID: 118
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -7,7 +7,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 2.00, 0, 118),
 ('coin', 5.00, 0, 118),
 ('coin', 10.00, 0, 118),
-('coin', 50.00, 0, 118);
+('coin', 50.00, 0, 118)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -17,4 +19,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 200.00, 0, 118),
 ('banknote', 500.00, 0, 118),
 ('banknote', 1000.00, 0, 118),
-('banknote', 2000.00, 0, 118);
+('banknote', 2000.00, 0, 118)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

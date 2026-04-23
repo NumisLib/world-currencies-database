@@ -1,12 +1,14 @@
--- Paraguayan Guaraní denominations, DB ID: 125
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Paraguayan GuaranÃ­ denominations, DB ID: 125
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 50.00, 0, 125),
 ('coin', 100.00, 0, 125),
 ('coin', 500.00, 0, 125),
-('coin', 1000.00, 0, 125);
+('coin', 1000.00, 0, 125)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -15,4 +17,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 10000.00, 0, 125),
 ('banknote', 20000.00, 0, 125),
 ('banknote', 50000.00, 0, 125),
-('banknote', 100000.00, 0, 125);
+('banknote', 100000.00, 0, 125)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

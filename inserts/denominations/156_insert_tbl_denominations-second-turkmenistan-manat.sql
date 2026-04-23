@@ -1,5 +1,5 @@
--- Turkmenistan Manat denominations, DB ID: 156
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Turkmenistan Manat denominations, DB ID: 156
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -10,7 +10,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 0.20, 1, 156),
 ('coin', 0.50, 1, 156),
 ('coin', 1.00, 0, 156),
-('coin', 2.00, 0, 156);
+('coin', 2.00, 0, 156)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -21,4 +23,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 50.00, 0, 156),
 ('banknote', 100.00, 0, 156),
 ('banknote', 200.00, 0, 156),
-('banknote', 500.00, 0, 156);
+('banknote', 500.00, 0, 156)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

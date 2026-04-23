@@ -1,5 +1,5 @@
--- Tajikistani Somoni denominations, DB ID: 149
--- Last updated: 2026-01-07 by Luca-Pascal Junge
+﻿-- Tajikistani Somoni denominations, DB ID: 149
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -12,7 +12,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 0.50, 1, 149),
 ('coin', 1.00, 0, 149),
 ('coin', 3.00, 0, 149),
-('coin', 5.00, 0, 149);
+('coin', 5.00, 0, 149)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -28,4 +30,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 50.00, 0, 149),
 ('banknote', 100.00, 0, 149),
 ('banknote', 200.00, 0, 149),
-('banknote', 500.00, 0, 149);
+('banknote', 500.00, 0, 149)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+

@@ -1,5 +1,5 @@
--- Costa Rican Colón denominations, DB ID: 50
--- Last updated: 2026-01-06 by Luca-Pascal Junge
+﻿-- Costa Rican ColÃ³n denominations, DB ID: 50
+-- Last updated: 2026-04-23 by Luca-Pascal Junge
 
 -- coins
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -8,7 +8,9 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('coin', 25.00, 0, 50),
 ('coin', 50.00, 0, 50),
 ('coin', 100.00, 0, 50),
-('coin', 500.00, 0, 50);
+('coin', 500.00, 0, 50)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
 
 -- banknotes
 INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
@@ -17,4 +19,6 @@ INSERT INTO tbl_denominations (type, value, fractional, currencyFk) VALUES
 ('banknote', 5000.00, 0, 50),
 ('banknote', 10000.00, 0, 50),
 ('banknote', 20000.00, 0, 50),
-('banknote', 50000.00, 0, 50);
+('banknote', 50000.00, 0, 50)
+ON CONFLICT(type, value, currencyFk) DO NOTHING;
+
