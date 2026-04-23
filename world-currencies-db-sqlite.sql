@@ -51,10 +51,11 @@ CREATE TABLE `tbl_denominations` (
   `value` numeric(30,6) NOT NULL,
   `fractional` boolean NOT NULL,
   `currencyFk` integer NOT NULL,
-  FOREIGN KEY(currencyFk) REFERENCES tbl_currencies(id)
+  FOREIGN KEY(currencyFk) REFERENCES tbl_currencies(id),
+  UNIQUE(type, value, currencyFk)
 );
 
-CREATE TABLE `tbl_denomiation_details` (
+CREATE TABLE `tbl_denomination_details` (
   `id` INTEGER PRIMARY KEY AUTOINCREMENT,
   `material` varchar(100),
   `weightingram` numeric(10,3),
@@ -62,8 +63,8 @@ CREATE TABLE `tbl_denomiation_details` (
   `lengthinmm` numeric(10,2),
   `widthinmm` numeric(10,2),
   `edge_type` TEXT CHECK (edge_type IN ('smooth', 'ribbed', 'inscription')),
-  `denomiationFk` integer NOT NULL,
-  FOREIGN KEY(denomiationFk) REFERENCES tbl_denomiations(id)
+  `denominationFk` integer NOT NULL,
+  FOREIGN KEY(denominationFk) REFERENCES tbl_denominations(id)
 );
 
 CREATE TABLE `tbl_designs` (
@@ -72,8 +73,8 @@ CREATE TABLE `tbl_designs` (
   `obverse_description` text,
   `reverse_description` text,
   `is_commemorative` boolean DEFAULT false,
-  `denomiationDetailFk` integer NOT NULL,
-  FOREIGN KEY(denomiationDetailFk) REFERENCES tbl_denomiation_details(id)
+  `denominationDetailFk` integer NOT NULL,
+  FOREIGN KEY(denominationDetailFk) REFERENCES tbl_denomination_details(id)
 );
 
 CREATE TABLE `tbl_mints` (
